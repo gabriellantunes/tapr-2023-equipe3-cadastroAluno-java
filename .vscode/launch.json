@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservicoalunoApplication<microservicoaluno>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.edu.univille.microservicoaluno.MicroservicoalunoApplication",
+            "projectName": "microservicoaluno",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
