@@ -31,5 +31,34 @@ public class AlunoServiceImpl implements AlunoService{
 
         return listaAlunos;
     }
+    //Feito 11/11/2023
+    //Metodo para criar um aluno
+    @Override
+    public Aluno create(Aluno aluno) {
+        return repository.save(aluno);
+    }
+    //Metodo para atualizar um aluno
+    @Override
+    public Aluno update(String id, Aluno aluno) {
+        aluno.setId(id); // Garantindo que o ID é o mesmo
+        return repository.save(aluno);
+    }
+    //Metodo para deletar um aluno
+    /*@Override
+    public void delete(String id) {
+        repository.deleteById(id);
+    }*/
+    @Override
+    public Aluno delete(String id) {
+        var buscaCarro = repository.findById(id);
+        if (buscaCarro.isPresent()){
+            var carro = buscaCarro.get();
+
+            repository.delete(carro);
+
+            return carro;
+        }
+        return null;
+    }
 
 }
