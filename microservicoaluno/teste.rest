@@ -1,7 +1,5 @@
 #Editar um registro no CosmosDB
 
-
-
 PUT http://localhost:8080/api/v1/alunos/987654321
 Content-Type: application/json
 
