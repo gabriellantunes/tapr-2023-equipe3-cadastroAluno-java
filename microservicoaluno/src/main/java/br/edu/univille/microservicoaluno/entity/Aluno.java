@@ -9,10 +9,10 @@ import com.azure.spring.data.cosmos.core.mapping.PartitionKey;
 public class Aluno {
     
     @Id
+    @PartitionKey
     @GeneratedValue
     public String id;
     public String nome;
-    @PartitionKey
     public int matricula;
     
     public String getId() {
