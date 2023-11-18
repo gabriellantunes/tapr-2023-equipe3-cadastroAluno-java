@@ -50,13 +50,13 @@ public class AlunoServiceImpl implements AlunoService{
     }*/
     @Override
     public Aluno delete(String id) {
-        var buscaCarro = repository.findById(id);
-        if (buscaCarro.isPresent()){
-            var carro = buscaCarro.get();
+        var buscaAluno = repository.findById(id);
+        if (buscaAluno.isPresent()){
+            var aluno = buscaAluno.get();
 
-            repository.delete(carro);
+            repository.delete(aluno);
 
-            return carro;
+            return aluno;
         }
         return null;
     }
