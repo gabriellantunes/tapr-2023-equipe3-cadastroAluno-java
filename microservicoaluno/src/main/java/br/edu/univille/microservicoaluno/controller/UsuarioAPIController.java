@@ -118,5 +118,4 @@ public class UsuarioAPIController {
         return 
             new ResponseEntity<List<Aluno>>(listaAlunos, HttpStatus.OK);
     }
-}
-*/
+}*/

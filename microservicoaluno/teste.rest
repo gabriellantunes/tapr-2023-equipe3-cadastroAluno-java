@@ -1,9 +1,9 @@
 #Editar um registro no CosmosDB
 PUT http://localhost:8080/api/v1/alunos/987654321
 Content-Type: application/json
-
 {
   "id": "12",
+  "nome": "Gabriel",
   "nome": "Gabriel",
   "matricula": "076300"
 }
@@ -13,18 +13,21 @@ GET http://localhost:8080/api/v1/alunos
 
 #Inserir registros no CosmosDB
 POST http://localhost:8080/api/v1/alunos
-Content-Type: application/json
 
+GET http://localhost:8080/api/v1/alunos
+
+#Inserir registros no CosmosDB
+POST http://localhost:8080/api/v1/alunos
+Content-Type: application/json
 {
   "id": "987654321",
+  "nome": "Carlos",
   "nome": "Carlos",
   "matricula": "321654"
 }
 
 DELETE http://localhost:8080/api/v1/alunos/987654321
 Content-Type: application/json
-
-
 
 
 
