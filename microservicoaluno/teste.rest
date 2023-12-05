@@ -23,3 +23,39 @@ Content-Type: application/json
 
 DELETE http://localhost:8080/api/v1/alunos/987654321
 Content-Type: application/json
+
+
+
+
+
+#CRUD do Carlos
+#Editar um registro no CosmosDB
+PUT http://localhost:8080/api/v1/professores/987654321
+Content-Type: application/json
+
+{
+    "id": "987654321",  
+    "matricula": "69696969",
+    "disciplina": "Educaçao Fisica",
+    "aula": "terceira",
+    "formacao": "biologia",
+    "grade": "5"
+    
+}
+
+#Inserir registros no CosmosDB
+POST http://localhost:8080/api/v1/professores
+Content-Type: application/json
+
+{
+  "id": "987654321",  
+  "matricula": "69696969",
+  "disciplina": "matematica",
+  "aula": "terceira",
+  "formacao": "biologia",
+  "grade": "5"
+
+}
+
+DELETE http://localhost:8080/api/v1/professores/987654321
+Content-Type: application/json

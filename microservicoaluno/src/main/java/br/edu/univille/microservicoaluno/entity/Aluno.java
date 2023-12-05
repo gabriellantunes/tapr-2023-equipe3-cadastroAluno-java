@@ -14,6 +14,7 @@ public class Aluno {
     public String id;
     public String nome;
     public int matricula;
+    public String professorId;
     
     public String getId() {
         return id;
@@ -32,5 +33,11 @@ public class Aluno {
     }
     public void setMatricula(int matricula) {
         this.matricula = matricula;
+    }
+    public String getprofessorId() {
+        return nome;
+    }
+    public void setprofessorId(String professorId) {
+        this.professorId = professorId;
     }
 }
